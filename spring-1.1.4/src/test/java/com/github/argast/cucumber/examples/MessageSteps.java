@@ -2,10 +2,8 @@ package com.github.argast.cucumber.examples;
 
 import cucumber.api.java.en.Then;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.test.context.ContextConfiguration;
 
-@ContextConfiguration(locations = "/cucumber.xml")
-public class MessageSteps {
+public class MessageSteps extends DefaultCucumberSpringContextConfiguration {
 
     @Autowired
     private MessageReceiver messageReceiver;

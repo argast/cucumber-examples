@@ -2,10 +2,8 @@ package com.github.argast.cucumber.examples;
 
 import cucumber.api.java.Before;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.test.context.ContextConfiguration;
 
-@ContextConfiguration(locations = "/cucumber.xml")
-public class Init {
+public class Init extends DefaultCucumberSpringContextConfiguration {
 
     @Autowired
     private Queue queue;
